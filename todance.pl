@@ -1,18 +1,18 @@
-% Definición de los tiempos verbales
+% definición de los tiempos verbales
 tiempo(presente).
 tiempo(pasado).
 tiempo(futuro).
 
-% Definición de las personas gramaticales 
+% definición de las personas gramaticales 
 persona(primera).
 persona(segunda).
 persona(tercera).
 
-% Definición de los números gramaticales 
+% definición de los números gramaticales 
 numero(singular).
 numero(plural).
 
-% Definición de la conjugación del verbo "dance"
+% definición de la conjugación del verbo "dance"
 bailar(presente,primera,singular,"dance").
 bailar(presente,segunda,singular,"dance").
 bailar(presente,tercera,singular,"dances").
@@ -34,7 +34,6 @@ bailar(futuro,primera,plural,"will dance").
 bailar(futuro,segunda,plural,"will dance").
 bailar(futuro,tercera,plural,"will dance").
 
-% Regla para conjugar el verbo
 conjugar_verbo(Verbo,Tiempo,Persona,Numero,Conjugacion):- 
     tiempo(Tiempo),
     persona(Persona),
